@@ -1,35 +1,82 @@
-body {
-background-color: #FFFFFF ;
-color:#757575 ;
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --acent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+}
 
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--title-text-color);
 }
 
 .list {
-
-    list-style: none;
+  list-style: none;
 }
-    
-/* цвет основного текста #757575 /*
-/* вторичный цвет текста #212121 /*
-/* цвет логотипа  #2196F3 /*
+
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
+/* цвет логотипа  #2196F3 */
 /* акцент #2196F3 */
 /* вторичный цвет фона #F5F4FA */
 
 .logo {
-    color:#2196F3 ;
-
+  color: var(--acent-color);
 }
 
 /* site-nav */
+
 .site-nav .link {
-    color:#212121 ;
+  color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+  color: var(--acent-color);
 }
 
+/* Contacts */
 
+.contacts .link {
+  color: var(--primary-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--acent-color);
+}
+.site-nav .link.current {
+  color: var(--acent-color);
+}
 
+/* hero */
 
+.hero-title {
+  color: var(--primary-text-color);
+}
+.section-title {
+  color: var(--primary-text-color);
+}
+
+/* features */
+
+.feature-list .title {
+  color: var(--primary-text-color);
+}
+
+/* Examples */
+.work-liste .title {
+  color: var(--title-text-color);
+}
+
+/* Footer */
+
+/* Button */
+.button {
+  color: var(--acent-color);
+  background-color: var(--primary-bg-color);
+}
+
+.button.primary {
+  color: var(--primary-bg-color);
+  background-color: var(--acent-color);
+}
