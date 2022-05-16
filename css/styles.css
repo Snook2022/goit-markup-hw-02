@@ -3,6 +3,7 @@
   --title-text-color: #757575;
   --acent-color: #2196f3;
   --primary-bg-color: #ffffff;
+  --bg-color-button: #f5f4fa;
 }
 
 body {
@@ -78,5 +79,14 @@ body {
 
 .button.primary {
   color: var(--primary-bg-color);
-  background-color: var(--acent-color);
+  background-color: var(--bg-color-button);
+}
+
+.buttons-nav .button.primary {
+  color: var(--primary-text-color);
+}
+.buttons-nav .button.primary:hover,
+.buttons-nav .button.primary:focus {
+  color: var(--primary-bg-color);
+  background-color: #2196f3;
 }
