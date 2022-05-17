@@ -176,3 +176,8 @@ body {
 .section-title-no {
   color: var(--primary-bg-color);
 }
+
+.contacts-footer-list .link-footer:hover,
+.contacts-footer-list .link-footer:focus {
+  color: var(--acent-color);
+}
