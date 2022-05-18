@@ -21,7 +21,19 @@ body {
 .list {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* цвет основного текста #757575 */
 /* вторичный цвет текста #212121 */
 /* цвет логотипа  #2196F3 */
@@ -148,24 +160,30 @@ body {
 }
 
 /* Button */
-.btn-primary {
+.btn {
   color: var(--primary-bg-color);
   background-color: var(--acent-color);
   font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
-.buttons-nav .button.primary {
+.buttons-nav .button-nav {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
-.buttons-nav .button.primary:hover,
-.buttons-nav .button.primary:focus {
+.buttons-nav .button-nav:hover,
+.buttons-nav .button-nav:focus {
   color: var(--primary-bg-color);
   background-color: #2196f3;
 }
