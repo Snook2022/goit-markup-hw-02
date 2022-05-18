@@ -15,6 +15,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -36,6 +37,10 @@ body {
 }
 .logo-studio {
   color: #000000;
+}
+
+.logo-footer {
+  color: var(--primary-bg-color);
 }
 /* site-nav */
 
@@ -70,15 +75,17 @@ body {
 }
 
 /* hero */
-
+.hero {
+  background-color: var(--hero-bg-color);
+}
 .hero-title {
   color: var(--primary-bg-color);
-  background-color: var(--hero-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 .section-title {
   color: var(--primary-text-color);
@@ -87,12 +94,16 @@ body {
   font-size: 36px;
   line-height: 1.17;
 }
-.team-list .section-title {
+.section-team .section-title {
+  background-color: var(--bg-color-button);
+}
+.team-list .section-title-team {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-list .text {
   color: var(--title-text-color);
@@ -100,6 +111,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 /* features */
 
@@ -108,6 +120,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* Examples */
@@ -122,6 +136,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 .work-list .section-title {
@@ -129,15 +144,18 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 /* Button */
 .btn-primary {
   color: var(--primary-bg-color);
   background-color: var(--acent-color);
+  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 .buttons-nav .button.primary {
@@ -162,9 +180,7 @@ body {
   line-height: 1.71;
   text-decoration: none;
 }
-.contacts-footer-list {
-  background-color: var(--hero-bg-color);
-}
+
 .link-map {
   color: var(--primary-bg-color);
   font-family: 'Roboto';
@@ -174,9 +190,12 @@ body {
   line-height: 1.71;
   text-decoration: none;
 }
-
-.section-title-no {
-  color: var(--primary-bg-color);
+.link-map:hover,
+.link-map:focus {
+  color: var(--acent-color);
+}
+.page-footer {
+  background-color: var(--hero-bg-color);
 }
 
 .contacts-footer-list .link-footer:hover,
