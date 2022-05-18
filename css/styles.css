@@ -34,7 +34,9 @@ body {
   line-height: 1.19;
   text-decoration: none;
 }
-
+.logo-studio {
+  color: #000000;
+}
 /* site-nav */
 
 .site-nav .link {
